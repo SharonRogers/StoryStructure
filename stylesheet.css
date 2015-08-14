@@ -1,0 +1,237 @@
+body {
+	background-color: hsla(150, 50%, 25%, .8);
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/*Styling for the title and the nav bar witht he element buttons*/
+
+.pageTitle {
+	background-color: hsla(150, 25%, 75%, .4);
+	width: 100%;
+	height: 30%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;	
+	font-size: 50px;
+}
+
+#home {
+	background-color: hsla(191, 96%, 88%, 1);
+}
+
+nav {
+	background-color: hsla(150, 25%, 75%, .4);
+	width: 100%;
+	height: 15%;
+	border: 10px, solid, black;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+.navbutton {
+	vertical-align: center;
+	padding: 10px;
+	margin: 15px;
+	font-family: helvetica;
+	font-weight: 20px;
+	font-style: italic;
+	font-size: 20px;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hilight {
+	color: hsla(33, 81%,80%, .9);
+}
+
+#expo {
+	background-color: hsla(33, 81%,80%, .9);
+}
+
+#riseAction {
+	background-color: hsla(55, 93%, 60%, .7);
+}
+
+#climax {
+	background-color: hsla(344, 89%, 51%, .9);
+}
+
+#fallAction {
+	background-color: hsla(181, 91%, 34%, 1);
+}
+
+#resolution {
+	background-color: hsla(197, 93%, 35%, .75);
+}
+
+/*This is the styling for the home page with the introduction text, image and button to all stories*/
+
+.introduction {
+	font: helvetica 75px; 
+	text-decoration: bold italic;
+	width: 80%;
+	height: 100%;
+	margin-top: 40px;
+	
+}
+
+.imgbox {
+	width: 400px;
+	height: 350px;
+	vertical-align: center;
+	border: 5px solid black;
+	border-radius: 3px;
+	float: left;
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+
+.nomap {
+	width: 100%;
+	height: 100%;
+}
+
+.allStoriesButton {
+	font-family: helvetica;
+	font-weight: 20px;
+	font-style: italic;
+	font-size: 20px;
+	border-radius: 10px;
+	background-color: hsla(191, 96%, 88%, 1);
+	margin-left: 60px; 
+	
+}
+
+/*This is the section for styling the list of stories in the all stories view*/
+
+.storySection {
+	width: 80%;
+	height: 100%;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: helvetica;	
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 20px;
+	font-style: italic;
+}
+
+h2 {
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+hr {
+	width: 100%;
+	height: 10px;
+	background-color: hsla(150, 25%, 75%, .4)
+}
+
+
+p {
+	font-size: 20px;
+}
+
+/*This section is for the structure breakdown page*/
+
+.introduction {
+	font-family: helvetica;
+	font-size: 20px;
+	margin-left: 20px;}
+
+
+.elementTitle {
+	font-family: helvetica;
+	font-size: 15px;
+	text-decoration: underline;
+	margin-left: 20px;
+	font-style: italic;
+	vertical-align: center;
+	border-radius: 10px;
+}
+
+.elementSentence {
+	font-family: helvetica;
+	font-size: 20px;
+	font-style: italic;
+	margin-left: 60px;
+}
+
+.storyReturn {
+	font-family: helvetica;
+	font-weight: 20px;
+	font-style: italic;
+	font-size: 20px;
+	border-radius: 10px;
+	background-color: hsla(191, 96%, 88%, 1);
+	margin-right: 10px;
+	float: right;
+	margin-top: 20px;
+	float: right;
+}
+
+.testReturn {
+	font-family: helvetica;
+	font-weight: 20px;
+	font-style: italic;
+	font-size: 20px;
+	border-radius: 10px;
+	background-color: hsla(191, 96%, 88%, 1);
+	margin-right: 10px;
+	float: right;
+	margin-top: 20px;
+	float: right;
+}
+
+#hiker {
+	text-align: right;
+	vertical-align: middle;
+}
+
+.breakdownContainer {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+
+.breakdown {
+	width: 40%;
+	height: 100%;
+	vertical-align: left;
+	display: inline-block;
+	float: left;
+}
+
+.graphBox {
+	background-image: url("Plot-Diagram-Worksheet-01.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 60%;
+	height: 600px;
+	float: right;
+	flex-direction: row;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.grid {
+	width: 200px;
+	height: 200px;
+	font-family: helvetica;
+	font-size: 20px;
+	float: right;
+}
+

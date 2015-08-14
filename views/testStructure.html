@@ -1,0 +1,20 @@
+<!-- section for compete stories on main page -->
+	<div class="storySection">
+		<h1>The Complete Stories:</h1>
+		<div class="stories"  ng-repeat="wholeStory in stories">
+
+		<p ng-click="setBreakdown($index)">{{wholeStory.expo}} {{wholeStory.riseAction}} {{wholeStory.climax}} {{wholeStory.fallAction}} {{wholeStory.resolution}}</p>
+	
+		</div>
+	</div>
+
+<div>
+	<ul>
+		<li>{{story.expo}}</li>
+		<li>{{story.riseAction}}</li>
+		<li>{{story.climax}}</li>
+		<li>{{story.fallaction}}</li>
+		<li>{{story.resolution}}</li>
+	</ul>
+	
+</div>

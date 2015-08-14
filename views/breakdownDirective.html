@@ -1,0 +1,85 @@
+
+
+<div class="breakdownContainer">
+
+
+<!-- The first div is the elements of the story divided out -->
+
+	<div class="breakdown">
+		<ul style="list-style-type:none">
+			<p class="introduction">Begin your story journey by clicking on each element of the story structure below.</p>
+			<li>
+				<button class="elementTitle" id="expo" ng-click="toggle(1)">1. Exposition:</button>
+				<p class="elementSentence">{{story.expo}}</p>
+			</li>
+			<li>
+				<button class="elementTitle" id="riseAction" ng-click="toggle(2)">2. Rising Action:</button>
+				<p class="elementSentence">{{story.riseAction}}</p>
+			</li>
+			<li>
+				<button class="elementTitle" id="climax" ng-click="toggle(3)">3. Climax:</button>
+				<p class="elementSentence">{{story.climax}}</p>
+			</li>
+			<li>
+				<button class="elementTitle" id="fallAction" ng-click="toggle(4)">4. Falling Action:</button>
+				<p class="elementSentence">{{story.fallAction}}</p>
+			</li>
+			<li>
+				<button class="elementTitle" id="resolution" ng-click="toggle(5)">5. Resolution:</button>
+				<p class="elementSentence">{{story.resolution}}</p>
+			</li>
+		</ul>
+		
+	</div>
+
+<!-- The button takes the view back to the all stories -->
+
+<button class="testReturn" ng-click="goTest()">Now Test Yourself</button>
+
+<button class="storyReturn" ng-click="goBack()">Back to All Stories</button>
+
+<!-- the second div is the grid with the background picture of the graph and includes the hiker placement -->
+<!-- the third div is a larger grid that gives the numbers over one wiht the images -->
+
+
+	<div class="graphBox">
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid">
+					<img ng-show="hiker.three" src="/1186437-Cartoon-Of-A-Happy-Man-Hiking-With-A-Large-Pack-Royalty-Free-Vector-Clipart.png"><span>3</span>
+				</div>
+				<div class="grid"></div>
+				
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid">
+					<img  ng-show="hiker.two" src="/1186437-Cartoon-Of-A-Happy-Man-Hiking-With-A-Large-Pack-Royalty-Free-Vector-Clipart.png"><span>2</span>
+				</div>
+				<div class="grid" id="hiker">
+					<img  ng-show="hiker.four" src="/1186437-Cartoon-Of-A-Happy-Man-Hiking-With-A-Large-Pack-Royalty-Free-Vector-Clipart.png"><span>4</span>
+				</div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid"> 
+					<img ng-show="hiker.one" src="/1186437-Cartoon-Of-A-Happy-Man-Hiking-With-A-Large-Pack-Royalty-Free-Vector-Clipart.png"><span>1</span>
+				</div>
+				<div class="grid"></div>
+				<div class="grid"></div>
+				<div class="grid">
+					<img ng-show="hiker.five" src="/1186437-Cartoon-Of-A-Happy-Man-Hiking-With-A-Large-Pack-Royalty-Free-Vector-Clipart.png"><span>5</span>
+				</div>
+
+	</div>
+
+</div>
+
+
+
+
+	
+		
+		
+
+
+

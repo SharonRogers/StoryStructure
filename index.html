@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="storyStructure">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Story Structure Games</title>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+	
+<body ng-controller="mainCtrl">
+
+</header>
+<!-- This section is the static title and nave bar that will be on the top of every view -->
+		<h1 class="pageTitle">Elements of Story Structure</h1>
+
+	<nav>
+			<button class="navbutton" id="expo">Exposition</button>
+			<button class="navbutton" id="riseAction">Rising Action</button>
+			<button class="navbutton" id="climax">Climax</button>
+			<button class="navbutton" id="fallAction">Falling Action</button>
+			<button class="navbutton" id="resolution">Resolution</button>
+			<button class="navbutton" id="home" ng-click="goHome()">Home</button>
+	</nav>
+	
+	</header>
+
+<!-- This will bring in the routes outlined in app.js -->
+	
+	<story-decorator story="expo">
+
+	<ng-view></ng-view>
+
+	<!-- Angular Files -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-route.js"></script>
+  	<!-- SCRIPTS -->
+  	<script src="scripts/app.js"></script>
+  	<script src="scripts/controllers/mainCtrl.js"></script>
+  	<script src="scripts/controllers/breakdownCtrl.js"></script>
+<!--<script src="scripts/controllers/testCtrl.js"></script> -->
+  	<script src="scripts/directives/breakdownDirective.js"></script>
+  	<script src="scripts/services/dataService.js"></script>
+  	<script src="scripts/services/breakdownService.js"></script>
+<!-- <script src="scripts/services/testService.js"></script> -->
+ 
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!-- section for compete stories on main page with a bulit in that when the story is selected it will then route to the structure breakdown page-->
+	<div class="storySection">
+		<h1>Complete Stories:</h1>
+		<h3>Click on any Story to Examine Plot Elements in Detail</h3>
+		<br>	
+
+		<div class="stories" ng-repeat="wholeStory in stories">
+		<div ng-click="setBreakdown($index)">
+			<h2 class="storyTitles">{{wholeStory.title}}</h2>
+			<p>{{wholeStory.expo}} {{wholeStory.riseAction}} {{wholeStory.climax}} {{wholeStory.fallAction}} {{wholeStory.resolution}}</p>
+			<br>
+			<hr>
+		</div>
+	</div>
